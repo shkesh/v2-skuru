@@ -1,0 +1,6 @@
+C:\Users\brook\Desktop\Skuru v2\Skuru CORE\bin\Debug\Skuru CORE.dll
+C:\Users\brook\Desktop\Skuru v2\Skuru CORE\bin\Debug\Skuru CORE.pdb
+C:\Users\brook\Desktop\Skuru v2\Skuru CORE\obj\Debug\Skuru CORE.csproj.AssemblyReference.cache
+C:\Users\brook\Desktop\Skuru v2\Skuru CORE\obj\Debug\Skuru CORE.csproj.CoreCompileInputs.cache
+C:\Users\brook\Desktop\Skuru v2\Skuru CORE\obj\Debug\Skuru CORE.dll
+C:\Users\brook\Desktop\Skuru v2\Skuru CORE\obj\Debug\Skuru CORE.pdb

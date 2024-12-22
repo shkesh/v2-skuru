@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skuru App", "Skuru v2\Skuru App.csproj", "{228BFD9E-3C90-4B72-9BB3-A916D045B922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skuru Core", "Skuru CORE\Skuru Core.csproj", "{983F2783-5763-4770-B133-9E598CE7637E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{228BFD9E-3C90-4B72-9BB3-A916D045B922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228BFD9E-3C90-4B72-9BB3-A916D045B922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228BFD9E-3C90-4B72-9BB3-A916D045B922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228BFD9E-3C90-4B72-9BB3-A916D045B922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983F2783-5763-4770-B133-9E598CE7637E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983F2783-5763-4770-B133-9E598CE7637E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983F2783-5763-4770-B133-9E598CE7637E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983F2783-5763-4770-B133-9E598CE7637E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

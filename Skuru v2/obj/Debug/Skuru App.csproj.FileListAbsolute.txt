@@ -1,0 +1,13 @@
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\bin\Debug\Skuru v2.exe.config
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\bin\Debug\Skuru v2.exe
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\bin\Debug\Skuru v2.pdb
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\bin\Debug\Skuru CORE.dll
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\bin\Debug\Skuru CORE.pdb
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\obj\Debug\Skuru App.csproj.AssemblyReference.cache
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\obj\Debug\Skuru.App.MainForm.resources
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\obj\Debug\Skuru_v2.Properties.Resources.resources
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\obj\Debug\Skuru App.csproj.GenerateResource.cache
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\obj\Debug\Skuru App.csproj.CoreCompileInputs.cache
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\obj\Debug\Skuru App.csproj.Up2Date
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\obj\Debug\Skuru v2.exe
+C:\Users\brook\Desktop\Skuru v2\Skuru v2\obj\Debug\Skuru v2.pdb
