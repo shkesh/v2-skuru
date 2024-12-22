@@ -7,19 +7,22 @@ namespace Skuru.App
 {
     public partial class MainForm : Form
     {
-        TypingSession activeSession = new TypingSession();
-
+        private readonly TypingSession _activeSession;
+        private ScoreUpdater _scoreUpdater;
+        
         public MainForm()
         {
+            _activeSession = new TypingSession();
+            _scoreUpdater = new ScoreUpdater();
             InitializeComponent();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            TextBoxForInput.Text = activeSession.Text;
+            TextBoxForInput.Text = _activeSession.Text;
             MaskedTextBoxForInput.Focus();
             TextEditor.EditSymbols(TextBoxForInput, 0, Color.Gray, "Consolas", 16F, FontStyle.Underline);
-            LabelForScore.Text = ScoreUpdater.UpdateScore(activeSession.CurrentIndex, activeSession.NumberOfSymbols);
+            LabelForScore.Text = _scoreUpdater.UpdateScore(_activeSession.CurrentSymbolIndex, _activeSession.NumberOfSymbols);
 
             Button30Words.BackColor = Color.Gray;
         }
@@ -75,30 +78,34 @@ namespace Skuru.App
 
         private void MaskedTextBoxForInput_KeyPress(object sender, KeyPressEventArgs e)
         {
-            activeSession.CheckInputSymbol(TextBoxForInput, Convert.ToChar(e.KeyChar));
+            _activeSession.CheckInputSymbol(TextBoxForInput, e.KeyChar);
 
-            if (activeSession.CurrentIndex == 1)
+            if (_activeSession.CurrentSymbolIndex == 1)
             {
-                activeSession.StartSession();
+                _activeSession.StartSession();
             }
 
-            if (activeSession.CurrentIndex == TextBoxForInput.Text.Length)
+            if (_activeSession.CurrentSymbolIndex == TextBoxForInput.Text.Length)
             {
-                activeSession.FinishSession();
-                TextBoxForInput.Text = Statistics.OutputStatistics(activeSession.ResultTime, activeSession.NumberOfSymbols, activeSession.NumberOfWords, activeSession.NumberOfMisprints);
+                _activeSession.FinishSession();
+                TextBoxForInput.Text = Statistics.OutputStatistics(_activeSession.ResultTime, _activeSession.NumberOfSymbols, _activeSession.NumberOfWords, _activeSession.NumberOfMisprints);
                 MaskedTextBoxForInput.ReadOnly = true;
                 LabelForScore.ForeColor = Color.Green;
             }
 
-            LabelForScore.Text = ScoreUpdater.UpdateScore(activeSession.CurrentIndex, activeSession.NumberOfSymbols);
+            LabelForScore.Text = _scoreUpdater.UpdateScore(_activeSession.CurrentSymbolIndex, _activeSession.NumberOfSymbols);
         }
+        
 
         private void Button30Words_Click(object sender, EventArgs e)
         {
-            if (activeSession.NumberOfWords == 30) { return; }
+            if (_activeSession.NumberOfWords == 30)
+            {
+                return;
+            }
 
-            activeSession.RefreshSession();
-            activeSession.NumberOfWords = 30;
+            _activeSession.RefreshSession();
+            _activeSession.NumberOfWords = 30;
 
             Button30Words.BackColor = Color.Gray;
             MaskedTextBoxForInput.ReadOnly = false;
@@ -106,13 +113,13 @@ namespace Skuru.App
 
         private void RefreshButton_Click(object sender, EventArgs e)
         {
-            activeSession.RefreshSession();
+            _activeSession.RefreshSession();
             
-            TextBoxForInput.Text = activeSession.Text;
+            TextBoxForInput.Text = _activeSession.Text;
             MaskedTextBoxForInput.Focus();
 
             TextEditor.EditSymbols(TextBoxForInput, 0, Color.Gray, "Consolas", 16F, FontStyle.Underline);
-            LabelForScore.Text = ScoreUpdater.UpdateScore(activeSession.CurrentIndex, activeSession.NumberOfSymbols);
+            LabelForScore.Text = _scoreUpdater.UpdateScore(_activeSession.CurrentSymbolIndex, _activeSession.NumberOfSymbols);
 
             LabelForScore.ForeColor = Color.Gray;
         }
