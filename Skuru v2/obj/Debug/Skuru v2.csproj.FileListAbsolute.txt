@@ -1,0 +1,5 @@
+C:\Users\brook\source\repos\Skuru v2\Skuru v2\obj\Debug\Skuru v2.csproj.AssemblyReference.cache
+C:\Users\brook\source\repos\Skuru v2\Skuru v2\obj\Debug\Skuru_v2.MainForm.resources
+C:\Users\brook\source\repos\Skuru v2\Skuru v2\obj\Debug\Skuru_v2.Properties.Resources.resources
+C:\Users\brook\source\repos\Skuru v2\Skuru v2\obj\Debug\Skuru v2.csproj.GenerateResource.cache
+C:\Users\brook\source\repos\Skuru v2\Skuru v2\obj\Debug\Skuru v2.csproj.CoreCompileInputs.cache
